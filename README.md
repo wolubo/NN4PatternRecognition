@@ -1,5 +1,4 @@
-# NN4PatternRecognition
-# Neural Network for Pattern Recognition
+# Neural Network for Pattern Recognition (NN4PatternRecognition)
 
 Das Programm simuliert ein neuronales Netzwerk zur Erkennung von Bitmustern. Die zu erkennenden Bitmuster und alle für das Training des Netzes und den Programmablauf relevanten Parameter werden aus einem Textfile eingeladen. Danach wir das neuronale Netz zunächst auf die eingelesenen Bitmuster trainiert. Danach werden die aus dem Textfile eingelesenen Bitmustern nach dem Zufallsprinzip verändert und die so veränderten Bitmuster werden dem neuronalen Netz in zufälliger Reihenfolge präsentiert. Zum Abschluss wird die erreichte Erkennungsrate ausgegeben.
 
