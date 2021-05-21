@@ -1,14 +1,12 @@
 package de.wbongartz.pattern_recognition.nnet;
 
-import static org.junit.Assert.*;
-
 import java.util.*;
 
-import nnet.*;
-import patterns.*;
+import de.wbongartz.pattern_recognition.patterns.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.fail;
 
 /**
  * @author Wolfgang Bongartz
@@ -24,7 +22,7 @@ public class PatternAssociatorTest {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		String[] a_raw = { 
 				".XXX..",
@@ -82,9 +80,6 @@ public class PatternAssociatorTest {
 		}
 	}
 
-	/**
-	 * Test method for {@link nnet.PatternAssociator#match(patterns.Pattern)}.
-	 */
 	@Test
 	public void testMatch() {
 		String answer;
@@ -126,9 +121,6 @@ public class PatternAssociatorTest {
 		}
 	}
 
-	/**
-	 * Test method for {@link nnet.PatternAssociator#train(patterns.PatternSet, boolean, int, java.util.Random)}.
-	 */
 	@Test
 	public void testTrain() {
 		try {

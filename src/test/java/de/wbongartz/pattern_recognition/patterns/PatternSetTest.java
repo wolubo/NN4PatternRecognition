@@ -1,13 +1,11 @@
 package de.wbongartz.pattern_recognition.patterns;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import patterns.*;
+import static org.junit.jupiter.api.Assertions.fail;
 
 /**
  * @author Wolfgang Bongartz
@@ -22,7 +20,7 @@ public class PatternSetTest {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 
 		_randomNumberSource = new Random();

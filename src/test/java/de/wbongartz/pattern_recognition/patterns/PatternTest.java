@@ -1,13 +1,12 @@
 package de.wbongartz.pattern_recognition.patterns;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Random;
 
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.fail;
 
-import patterns.Pattern;
 
 /**
  * @author Wolfgang Bongartz
@@ -21,7 +20,7 @@ public class PatternTest {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		
 		_randomNumberSource = new Random();
@@ -57,9 +56,6 @@ public class PatternTest {
 		}
 	}
 
-	/**
-	 * Test method for {@link patterns.Pattern#Pattern(patterns.Pattern)}.
-	 */
 	@SuppressWarnings("unused")
 	@Test
 	public void testPatternPattern() {
@@ -71,9 +67,6 @@ public class PatternTest {
 		}
 	}
 
-	/**
-	 * Test method for {@link patterns.Pattern#get(int, int)}.
-	 */
 	@Test
 	public void testGet() {
 		Pattern pattern = new Pattern("b", _raw);
@@ -114,9 +107,6 @@ public class PatternTest {
 
 	}
 
-	/**
-	 * Test method for {@link patterns.Pattern#clone()}.
-	 */
 	@Test
 	public void testClone() {
 		Pattern pattern = new Pattern("b", _raw);
@@ -180,27 +170,18 @@ public class PatternTest {
 		}
 	}
 
-	/**
-	 * Test method for {@link patterns.Pattern#get_height()}.
-	 */
 	@Test
 	public void testGet_height() {
 		Pattern pattern = new Pattern("b", _raw);
 		if( pattern.get_height()!=8 ) fail();
 	}
 
-	/**
-	 * Test method for {@link patterns.Pattern#get_width()}.
-	 */
 	@Test
 	public void testGet_width() {
 		Pattern pattern = new Pattern("b", _raw);
 		if( pattern.get_width()!=8 ) fail();
 	}
 
-	/**
-	 * Test method for {@link patterns.Pattern#differences(Pattern)}.
-	 */
 	@Test
 	public void testDifferences() {
 		Pattern pattern1 = new Pattern("empty", _empty);
@@ -234,10 +215,6 @@ public class PatternTest {
 		}
 	}
 
-
-	/**
-	 * Test method for {@link patterns.Pattern#equals(java.lang.Object)}.
-	 */
 	@Test
 	public void testEqualsObject() {
 		try {
@@ -257,9 +234,6 @@ public class PatternTest {
 		}
 	}
 
-	/**
-	 * Test method for {@link patterns.Pattern#toString()}.
-	 */
 	@Test
 	public void testToString() {
 		try {
@@ -270,9 +244,6 @@ public class PatternTest {
 		}
 	}
 
-	/**
-	 * Test method for {@link patterns.Pattern#hashCode()}.
-	 */
 	@Test
 	public void testHashCode() {
 		Pattern pattern = new Pattern("b", _raw);

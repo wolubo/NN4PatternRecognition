@@ -4,7 +4,7 @@ import java.util.*;
 
 import org.apache.commons.math3.linear.*;
 
-import patterns.*;
+import de.wbongartz.pattern_recognition.patterns.*;
 
 /**
  * Implementiert ein neuronales Netz zur Mustererkennung.

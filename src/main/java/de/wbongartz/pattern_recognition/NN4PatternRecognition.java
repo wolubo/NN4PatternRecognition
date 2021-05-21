@@ -3,8 +3,8 @@ package de.wbongartz.pattern_recognition;
 import java.io.*;
 import java.util.*;
 
-import nnet.*;
-import patterns.*;
+import de.wbongartz.pattern_recognition.nnet.*;
+import de.wbongartz.pattern_recognition.patterns.*;
 
 /**
  * The main program.
